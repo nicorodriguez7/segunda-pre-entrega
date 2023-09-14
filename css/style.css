@@ -267,10 +267,6 @@ button{
         background-size: 1024px;
     }
 }
-
-
-
-
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -292,11 +288,6 @@ button{
         height: 500px;
     }
 }
-
-
-
-
-
 @media (max-width: 608px) {
     .navbar li a{
         font-size: .9375rem;
@@ -305,13 +296,6 @@ button{
         background-size: 608px;
     }
 }
-
-
-
-
-
-
-
 @media (max-width: 425px) {
     .botonColeccion h1{
         font-size: .75rem;
