@@ -1,343 +1,405 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&family=Vina+Sans&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&family=Vina+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/*
-letra
 
-font-family: 'Roboto', sans-serif;
+header {
+  background-color: #FA58B6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+header div a {
+  padding-right: 0.9375rem;
+}
 
+.navbar {
+  list-style: none;
+  gap: 2rem;
+}
+.navbar li a {
+  color: black;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-shadow: 2px 2px 10px rgba(128, 128, 128, 0.596);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.navbar li a:hover {
+  color: lightblue;
+}
 
+body {
+  background-color: #1A1A40;
+}
 
-*/
-/*-------------------------------------HEADER-----------------------------------------*/
-header{
-    background-color: #FA58B6;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
+.sectionNuevaColeccion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56.25rem;
+  background-image: url(../assets/img/zeppelin.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
-header div a{
-    padding-right: .9375rem;
+
+.botonColeccion h1 {
+  box-shadow: -0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.164);
+  font-size: 2.1875rem;
 }
-.navbar{
-    list-style: none;
-    gap: 2rem;
+.botonColeccion button {
+  border-radius: 5px;
+  border: 5px 5px;
+  border-color: rgba(0, 0, 0, 0.205);
 }
-.navbar li a{
-    color: black;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.25rem;
-    text-shadow: 2px 2px 10px rgba(128, 128, 128, 0.596);
-    margin-left: 5px;
-    margin-right: 5px;
+.botonColeccion button a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.884);
+  font-family: "Roboto", sans-serif;
 }
-/*-------------------------------------MAIN-----------------------------------------*/
-body{
-    background-color: #1A1A40;
+
+.sectionOfertas {
+  height: 800px;
 }
-.sectionNuevaColeccion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 56.25rem;
-    background-image: url(../assets/img/zeppelin.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+.sectionOfertas h2 {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 6.25rem;
+  margin-top: 6.25rem;
 }
-.botonColeccion h1{
-    box-shadow: -.625rem .625rem .3125rem rgba(0, 0, 0, 0.164);
-    font-size: 2.1875rem;
+
+.ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  margin-bottom: 18.75rem;
+  gap: 2.5rem;
 }
-.botonColeccion h1 button a{
-    text-align: center;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.884);
-    font-family: 'Roboto', sans-serif;
+
+.sectionProductos h1 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.1875rem;
+  margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 }
-.botonColeccion h1 button{
-    border-radius: 5px;
-    border: 5px 5px;
-    border-color: rgba(0, 0, 0, 0.205);
+
+.tienda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6.25rem;
+  margin-right: 6.25rem;
+  margin-bottom: 18.75rem;
+  margin-top: 6.25rem;
 }
-.sectionOfertas{
-    height: 800px;
+
+.sectionTituloContacto h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 3.75rem;
+  margin-top: 3.75rem;
+  margin-bottom: 2.5rem;
 }
-.sectionOfertas h2{
-    color: white;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-bottom: 6.25rem;
-    margin-top: 6.25rem;
+
+.sectionFormulario {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 6.25rem;
+  height: 75rem;
+  color: white;
 }
-.card {
-    box-shadow: -.625rem .625rem .3125rem rgba(255, 255, 255, 0.164);
+
+.mb-3 {
+  margin-top: 1.875rem;
 }
-.cardBody {
-    color: black;
-}
-.sectionOfertas{
-    height: 100%;
-}
-.ofertas{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
-    margin-bottom: 18.75rem;
-    gap: 2.5rem;
-}
-.sectionProductos h1{
-    text-align: center;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 2.1875rem;
-    margin-top: 6.25rem;
-    margin-bottom: 6.25rem;
-}
-.tienda{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6.25rem;
-    justify-content: center;
-    align-items: center;
-    margin-left: 6.25rem;
-    margin-right: 6.25rem;
-    margin-bottom: 18.75rem;
-    margin-top: 6.25rem;
-}
-.sectionTituloContacto h1{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-left: 3.75rem;
-    margin-top: 3.75rem;
-    margin-bottom: 2.5rem;
-}
-.sectionFormulario{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 6.25rem;
-    height: 75rem;
-    color: white;
-}
-.mb-3{
-    margin-top: 1.875rem;
-}
+
 .ayudaMain {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 30% 50%;
+}
+
+.sectionAyudaTitulo {
+  height: 56.25rem;
+}
+.sectionAyudaTitulo h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  padding: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.filosofiaMarca h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 1.875rem;
+  margin-bottom: 0.625rem;
+  margin-top: 3.125rem;
+}
+.filosofiaMarca p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-left: 1.25rem;
+  margin-bottom: 12.5rem;
+  width: 80%;
+}
+
+.cambiosDevoluciones h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-left: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+.cambiosDevoluciones p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-left: 1.25rem;
+  width: 80%;
+}
+
+.tallesMain {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 62.5rem;
+}
+
+.sectionTallesTitulo {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-self: center;
+}
+
+.sectionMedidas {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  justify-content: center;
+}
+
+.sectionTalles {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.sectionTallesTitulo h1 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.medidas {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.medidas h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.625rem;
+  margin-top: 3.125rem;
+  text-align: center;
+}
+.medidas p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.tabla {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 0.625rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #FA58B6;
+  padding-right: 1.25rem;
+}
+.footer li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  list-style: none;
+}
+.footer li img {
+  padding-left: 0.625rem;
+}
+
+@media (max-width: 1024px) {
+  .botonColeccion h1 {
+    font-size: 1.5625rem;
+    margin-bottom: 50%;
+  }
+  .sectionNuevaColeccion {
+    background-size: 1024px;
+  }
+  .tallesMain {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 30% 50%;
-}
-.sectionAyudaTitulo{
-    height: 56.25rem;
-}
-.sectionAyudaTitulo h1{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    padding: 2.5rem;
-    margin-top: 2.5rem;
-}
-.filosofiaMarca h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-left: 1.875rem;
-    margin-bottom: .625rem;
-    margin-top: 3.125rem;
-}
-.filosofiaMarca p{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin-left: 1.25rem;
-    margin-bottom: 12.5rem;
-    width: 80%;
-}
-.cambiosDevoluciones h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-left: 1.875rem;
-    margin-bottom: .625rem;
-}
-.cambiosDevoluciones p{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    margin-left: 1.25rem;
-    width: 80%;
-}
-.tallesMain {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% 62.5rem;
-}
-.sectionTallesTitulo {
+    grid-template-rows: auto auto 62.5rem;
+  }
+  .sectionTallesTitulo {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
     align-self: center;
-}
-.sectionMedidas {
+  }
+  .sectionMedidas {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
     justify-content: center;
-}
-.sectionTalles {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-.sectionTallesTitulo h1{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    margin-top: 1.875rem;
-}
-.medidas {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.medidas h2{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin-bottom: .625rem;
-    margin-top: 3.125rem;
-    text-align: center;
-}
-.medidas p{
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    text-align: center;
-}
-.tabla {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px
-}
-button{
-    padding: .625rem;
-    
-}
-/*------------------------------------FOOTER---------------------------------------*/
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #FA58B6;
-    padding-right: 1.25rem;
-}
-.footer li{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: .875rem;
-    list-style: none;
-}
-.footer li img{
-    padding-left: .625rem;
-}
-
-
-/*-------------------RESPONSIVE----------------------------------*/
-@media (max-width: 1024px) {
-    .botonColeccion h1{
-        font-size: 1.5625rem;
-        margin-bottom: 50%;
-    }
-    .sectionNuevaColeccion{
-        background-size: 1024px;
-    }
-    .tallesMain {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: auto auto 62.5rem;
-    }
-    .sectionTallesTitulo {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        align-self: center;
-    }
-    .sectionMedidas {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-        justify-content: center;
-    }
-    .sectionTabla {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
+  }
+  .sectionTabla {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 }
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .footer {
-        flex-direction: column;
-    }
-    .botonColeccion h1{
-        font-size: 1.25rem;
-    }
-    .sectionNuevaColeccion{
-        background-size: 768px;
-    }
-    .sectionOfertas h2{
-        font-size: 35px;
-    }
-    .sectionNuevaColeccion{
-        height: 500px;
-    }
+  header {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .botonColeccion h1 {
+    font-size: 1.25rem;
+  }
+  .sectionNuevaColeccion {
+    background-size: 768px;
+  }
+  .sectionOfertas h2 {
+    font-size: 35px;
+  }
+  .sectionNuevaColeccion {
+    height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .botonColeccion h1 {
+    font-size: 1.5625rem;
+    margin-bottom: 50%;
+  }
+  .sectionNuevaColeccion {
+    background-size: 1024px;
+  }
+  .tallesMain {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto 62.5rem;
+  }
+  .sectionTallesTitulo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+  }
+  .sectionMedidas {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-content: center;
+  }
+  .sectionTabla {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .botonColeccion h1 {
+    font-size: 1.25rem;
+  }
+  .sectionNuevaColeccion {
+    background-size: 768px;
+  }
+  .sectionOfertas h2 {
+    font-size: 35px;
+  }
+  .sectionNuevaColeccion {
+    height: 500px;
+  }
 }
 @media (max-width: 608px) {
-    .navbar li a{
-        font-size: .9375rem;
-    }
-    .sectionNuevaColeccion{
-        background-size: 608px;
-    }
+  .navbar li a {
+    font-size: 0.9375rem;
+  }
+  .sectionNuevaColeccion {
+    background-size: 608px;
+  }
 }
 @media (max-width: 425px) {
-    .botonColeccion h1{
-        font-size: .75rem;
-    }
-    .sectionNuevaColeccion{
-        background-size: 425px;
-    }
-    .sectionOfertas h2{
-        font-size: 30px;
-    }
-    .sectionNuevaColeccion{
-        height: 18.75rem;
-    }
-    .sectionProductos h1{
-        font-size: 1.5625rem;
-    }
+  .botonColeccion h1 {
+    font-size: 0.75rem;
+  }
+  .sectionNuevaColeccion {
+    background-size: 425px;
+  }
+  .sectionOfertas h2 {
+    font-size: 30px;
+  }
+  .sectionNuevaColeccion {
+    height: 18.75rem;
+  }
+  .sectionProductos h1 {
+    font-size: 1.5625rem;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
